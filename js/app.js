@@ -203,8 +203,12 @@ const CF=window.GRAVITY_CONFIG||{};
 const sb=(CF.supabaseUrl&&CF.supabaseKey&&window.supabase)?supabase.createClient(CF.supabaseUrl,CF.supabaseKey):null;
 const GOVS=['القاهرة','الجيزة','الإسكندرية','الشرقية','الدقهلية','الغربية','المنوفية','القليوبية','البحيرة','كفر الشيخ','دمياط','بورسعيد','الإسماعيلية','السويس','شمال سيناء','جنوب سيناء','الفيوم','بني سويف','المنيا','أسيوط','سوهاج','قنا','الأقصر','أسوان','البحر الأحمر','الوادي الجديد','مطروح'];
 const ST={pending:'قيد الانتظار',processing:'جارٍ التنفيذ',completed:'تم التنفيذ',cancelled:'ملغي'};
-const em=p=>'u'+String(p).replace(/\D/g,'')+'@gravity-mail.com';
-let me=null,GT=[],DB={offers:[],jobs:[],partners:[],fields:[]},gmode='in';
+const em=p=>{
+  const x=String(p)
+    .replace(/[٠-٩]/g,d=>String('٠١٢٣٤٥٦٧٨٩'.indexOf(d)))
+    .replace(/\D/g,'');
+  return 'u'+x+'@gravity-mail.com';
+};let me=null,GT=[],DB={offers:[],jobs:[],partners:[],fields:[]},gmode='in';
 
 async function loadMe(){
  const {data:{session}}=await sb.auth.getSession();me=null;
