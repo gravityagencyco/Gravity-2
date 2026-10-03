@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GRAVITY Marketing Agency</title>
+<meta name="description" content="GRAVITY Marketing Agency - تسويق رقمي وتصميم جرافيك وصناعة محتوى وإنتاج ميديا">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800;900&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="root">
+<nav><div class="wrap">
+<a href="#top"><img src="assets/logo.png" alt="GRAVITY Marketing Agency"></a>
+<div class="links"><a href="#top">الصفحة الرئيسية</a><a href="#portfolio">أعمالنا</a><a href="#clients">المشتركون</a><a href="#offers">العروض</a><a href="#jobs">الوظائف</a><a href="#partners">شركاء عملنا</a><a href="#packages">الباقات</a><a href="#order">اطلب خدمة</a><a href="#calc">حاسبة الخدمات</a><a href="#branches">فروعنا</a><a href="#contact">تواصل معنا</a></div>
+<button class="btn burg sm" data-act="admin">تسجيل دخول الأدمن</button>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+<h1 id="h1">GRAVITY Agency<br><b>Build Your Future</b></h1>
+<p id="hp">نصنع لعلامتك حضورًا رقميًا لا يُنسى: تسويق رقمي، تصميم جرافيك، صناعة محتوى، وإنتاج ميديا باحترافية.</p>
+<div class="cta"><a class="btn" href="#packages">استكشف الباقات</a><a class="btn ghost" href="#calc">صمم باقتك الخاصة</a></div>
+</div></header>
+
+<section id="portfolio"><div class="wrap">
+<h2>معرض <span>الأعمال</span></h2><p class="sub">جزء من شغلنا مع عملائنا</p>
+<div class="tabs" id="ptabs"></div><div class="grid" id="pgrid"></div>
+</div></section>
+
+<section id="clients" style="display:none"><div class="wrap"><h2>المشتركون <span>معنا</span></h2><p class="sub">عملاء يثقون في GRAVITY</p><div class="grid" id="cgrid"></div></div></section>
+<section id="offers" style="display:none"><div class="wrap"><h2>العروض <span>الحالية</span></h2><p class="sub">خصومات لفترة محدودة</p><div class="grid" id="ofgrid"></div></div></section>
+<section id="packages" style="background:var(--dark)"><div class="wrap">
+<h2>الباقات <span>الشهرية</span></h2><p class="sub">اختار الباقة اللي تناسب نشاطك</p>
+<div class="sec3">باقات التصميم فقط</div><div class="grid" id="dpk"></div>
+<div class="sec3">الباقات الشاملة</div><div class="grid" id="fpk"></div>
+</div></section>
+
+<section id="order"><div class="wrap">
+<h2>اطلب <span>خدمة فردية</span></h2><p class="sub">غلاف مذكرة، بوستر، كروت، شهادات تقدير وغيرها — اختر اللي تحتاجه واطلب بدون باقة</p>
+<div class="grid" id="ogrid"></div>
+<div class="glass" style="padding:20px;margin-top:20px;display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap">
+<div style="flex:1 1 260px"><div id="olines"></div></div>
+<div style="text-align:center"><div style="color:var(--mut)">الإجمالي</div><div class="total" id="ototal">0</div>
+<button class="btn" data-act="order2" style="margin-top:6px">أكمل الطلب</button></div></div>
+</div></section>
+<section id="calc"><div class="wrap">
+<h2>حاسبة <span>الخدمات</span></h2><p class="sub">اختار الخدمات والكميات واعرف السعر فورًا</p>
+<div class="calc"><div class="glass" id="clist"></div>
+<div class="glass sum"><h3 style="margin-top:0">ملخص الطلب</h3><div id="clines"></div><hr style="border-color:var(--bd)">
+<div>الإجمالي</div><div class="total" id="ctotal">0</div>
+
+<button class="btn" style="width:100%;justify-content:center" data-act="order" style="margin-top:10px">أكمل الطلب</button></div></div>
+</div></section>
+
+<section id="jobs" style="display:none"><div class="wrap"><h2>الوظائف <span>المتاحة</span></h2><p class="sub">انضم لفريق GRAVITY</p><div class="grid" id="jgrid"></div></div></section>
+<section id="partners" style="display:none"><div class="wrap"><h2>شركاء <span>عملنا</span></h2><p class="sub">جهات نعتز بالتعاون معها</p><div class="grid" id="ptgrid"></div></div></section>
+<section id="branches" style="display:none;background:var(--dark)"><div class="wrap"><h2>فروعنا <span>والاستوديوهات المتعاونة</span></h2><p class="sub">اختر المحافظة لتعرف أماكننا والاستوديوهات المتعاونة</p><div class="grid" id="bgrid"></div></div></section>
+<footer id="contact"><div class="wrap">
+<img src="assets/logo.png" alt="GRAVITY"><div id="ft">تواصل معنا على واتساب لأي استفسار</div>
+<p style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap"><a class="btn sm" id="wal" target="_blank" rel="noopener">واتساب</a><a class="btn sm burg" id="fbl" target="_blank" rel="noopener">فيسبوك</a></p>
+<small>© <span id="yr"></span> GRAVITY Marketing Agency. جميع الحقوق محفوظة.</small>
+</div></footer>
+<div class="modal" id="lb"><div class="box glass"><button class="btn sm ghost x" data-act="close">✕ إغلاق</button><div id="lbc"></div></div>
+</div>
+<div class="modal" id="ob"><div class="box glass" style="max-width:520px"><button class="btn sm ghost x" data-act="closeo">✕ إغلاق</button>
+<h3 style="margin-top:0">بيانات الطلب</h3><div id="osumm" style="margin-bottom:12px"></div>
+<div class="of"><div class="of" id="ofields"></div><small id="f_err" style="color:#ff7b7b"></small>
+<button class="btn" style="width:100%;justify-content:center;margin-top:6px" data-act="submito">تأكيد الطلب</button>
+</div></div></div>
+</div>
+<div id="admin"></div>
+<script src="js/config.js"></script>
+<script src="data/site-data.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
